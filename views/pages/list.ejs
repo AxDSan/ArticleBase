@@ -1,0 +1,25 @@
+<h1 class="display-4">Articles</h1>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Blog ID</th>
+        <th>Title</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        <% articles.forEach(function(article) { %>
+            <tr>
+                <td><%= article.id %></td>
+                <td><a href="/articles/list/<%= article.id %>"><%= article.title %></a></td>
+                <td>
+                    <a class="btn btn-primary" href="/articles/edit/<%= article.id %>"><i class="fa fa-pencil" aria-hidden="true"></i></a> <strong>/</strong> 
+                    <form class="d-inline" action="/articles/delete/<%= article.id %>" method="post">
+                        <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>

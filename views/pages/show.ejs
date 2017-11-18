@@ -1,0 +1,34 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/articles/list">Articles</a></li>
+    <li class="breadcrumb-item active">Show</li>
+</ol>
+
+<h1 class="display-4">
+Article Details
+<a class="btn btn-primary btn-sm" href="/articles/edit/<%= article.id %>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<form class="d-inline" action="/articles/delete/<%= article.id %>" method="post">
+    <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+</form>
+</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="form-control" value="<%= article.title %>" readonly>
+    </div>
+
+    <div class="form-group">
+        <label for="body">Body</label>
+        <textarea name="body" class="form-control" readonly><%= article.body %></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="body">Created At:</label>
+        <input type="text" name="title" class="form-control" value="<%= createdAt %>" readonly>
+    </div>
+
+    <div class="form-group">
+        <label for="body">Updated At:</label>
+        <input type="text" name="title" class="form-control" value="<%= updatedAt %>" readonly>
+    </div>
+
+</form>
