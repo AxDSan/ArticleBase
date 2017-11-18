@@ -18,3 +18,12 @@ https://www.youtube.com/watch?v=AmjiDC_JUt4&list=PLillGF-RfqbZIA-9sI3T1uu7d7_Ctb
 
 2. Setup your datastore connection in `config/datastores.js`, and that's it, I was using MySQL
 so that's why you will see the entry at `Package.json`
+
+# Screenshots
+
+![Home](https://i.imgur.com/UNnliK7.png)
+___
+![Editing](https://i.imgur.com/XWKrR72.png)
+___
+![Article Details](https://i.imgur.com/lE73u8O.png)
+___
